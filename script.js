@@ -1,5 +1,4 @@
-//your JS code here. If required.
- function handleInput(input) {
+    function handleInput(input) {
             const nextInput = input.nextElementSibling;
             const prevInput = input.previousElementSibling;
 
@@ -11,5 +10,14 @@
                 if (prevInput) {
                     prevInput.focus();
                 }
+            }
+        }
+
+        function handleBackspace(input) {
+            const prevInput = input.previousElementSibling;
+
+            if (event.key === 'Backspace' && input.value === '' && prevInput) {
+                event.preventDefault();
+                prevInput.focus();
             }
         }
