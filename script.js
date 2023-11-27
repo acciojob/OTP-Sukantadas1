@@ -5,11 +5,11 @@
 
             if (input.value !== '') {
                 if (nextInput) {
-                    nextInput.focus();
+                    nextInput.focused();
                 }
             } else {
                 if (prevInput) {
-                    prevInput.focus();
+                    prevInput.focused();
                 }
             }
         }
